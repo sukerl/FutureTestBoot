@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class FutureTestUtil {
 	
-	@Async("taskExecutor")
+	@Async("myCustomTaskExecutor")
 	public CompletableFuture<String> runFuture1() {
 
 	    try {
@@ -21,7 +21,7 @@ public class FutureTestUtil {
 
 	}
 	
-	@Async("taskExecutor")
+	@Async("myCustomTaskExecutor")
 	public CompletableFuture<String> runFuture2() {
 
 	    try {
@@ -33,7 +33,7 @@ public class FutureTestUtil {
 
 	}
 	
-	@Async("taskExecutor")
+	@Async("myCustomTaskExecutor")
 	public CompletableFuture<String> runFuture3() {
 
 	    try {
